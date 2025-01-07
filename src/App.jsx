@@ -1,28 +1,28 @@
-import './App.css'
 import { Routes, Route, useNavigate } from 'react-router-dom'
 import PersonalDetail from './PersonalDetail'
-import LandingPage from './pages/landingPage'
+import ProfessionalDetail from './ProfessionalDetail';
+import './App.css'
+import ReviewPage from './ReviewPage';
 
-// const Header =() =>
-//   {
-//   const nav = useNavigate();
-//   return (     
-//         <header>
-//         <button id = 'go-to' onClick={() => nav('/personal-details')}>Go To</button>
-//         </header>
-//   );
-// }
 
 function App() {
 
+  const nav = useNavigate();
+      function gotoPage()
+      {
+        nav("personal-details");
+      }  
   return (
     <>
     <h1>This is a Multi-Step-form</h1>
-    <Header/>
+  
     <Routes>
-      <Route path='/' element={<div>Landing page</div>} />
-      <Route path='/landing-page' element={<LandingPage/>}/>
+      <Route path='/' element={<><div>Landing page</div>
+        <button id='go-to' onClick={gotoPage}>Go</button></>
+      } />
       <Route path='/personal-details' element={<PersonalDetail />} />
+      <Route path='/professional-details' element={<ProfessionalDetail />}></Route>
+      <Route path='/review-details' element={<ReviewPage/>}></Route>
     </Routes>
     </>
   )
