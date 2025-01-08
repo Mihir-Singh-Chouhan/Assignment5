@@ -1,0 +1,79 @@
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+  
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+  
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+
+.page {
+    margin: 100px;
+    padding: 100px;
+    max-width: 80%;
+    max-height: 80%;
+    background-color: rgba(240, 248, 255, 0.308);  
+    border-radius: 20px;
+}
+.page-container
+{
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.page-container input,select
+{
+    min-width: 400px;
+    min-height: 30px;
+}
+.page-container p
+{
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button
+{
+    width: 100px;
+    height: 30px;
+    border-radius: 40px;
+    border-width: 0;
+    background-color: green;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+#skills
+{
+    background-color: rgba(0, 47, 255, 0.185);
+    grid-template-columns: 3fr;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    border-radius: 20px;
+
+}
+ 
+.error-msg
+{
+    color: rgba(255, 0, 0, 0.918);
+    font-weight: 300;
+    font-size: 12px;
+   
+}
+
+.content
+{
+    background-color: rgba(50, 164, 230, 0.384);
+    padding: 100px;
+}
